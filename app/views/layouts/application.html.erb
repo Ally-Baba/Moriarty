@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
+
 <html>
   <head>
-    <title>Moriarty</title>
+    <title>Moriarty's</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +11,8 @@
   </head>
 
   <body>
+    <%= render 'layouts/navigation' %>
+    <%= render 'shared/messages' %>
     <%= yield %>
-  </body>
-</html>
+</body>
+</html>>
