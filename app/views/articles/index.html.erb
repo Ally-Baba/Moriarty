@@ -8,6 +8,9 @@
      <%= link_to article.title, article_path(article) %>
     </div>
     <div class="article-body">
+     <small>Created by: <%= article.user.username if article.user %>,
+     <%= time_ago_in_words(article.created_at) %> ago,
+        last updated: <%= time_ago_in_words(article.updated_at) %> ago</small>
      <%= truncate(article.description, length: 100) %>
     </div>
     <div class="article-actions">

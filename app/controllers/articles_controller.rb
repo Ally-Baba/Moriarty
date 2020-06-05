@@ -1,7 +1,6 @@
 class ArticlesController < ApplicationController
 
     before_action :set_article, only: [:edit, :update, :show, :destroy]
-
     def set_article
         @article = Article.find(params[:id])
     end
@@ -30,7 +29,7 @@ class ArticlesController < ApplicationController
             render 'new'
         end
         @article.save
-        # redirect_to article_path(@article)
+        redirect_to article_path(@article)
     end
 
     def show
@@ -38,6 +37,7 @@ class ArticlesController < ApplicationController
 
 
     def edit
+        @article = Article.find(params[:id])
     end
 
     def update
