@@ -7,13 +7,13 @@
     margin-top: 15px;
    }
    
-$navbar-default-bg: black;
+$navbar-default-bg: rgb(23, 102, 40);
 @import "bootstrap-sprockets";
 @import "bootstrap";
 #logo {
  float: left;
  font-size: 1.7em;
- color: white;
+ color: rgb(136, 207, 88);
  text-transform: uppercase;
  letter-spacing: -1px;
  font-weight: bold;
@@ -27,8 +27,8 @@ $navbar-default-bg: black;
  padding-top: 5px;
 }
 .article-title {
-//  color: #004e07;
-//  font-weight: bold;
+  color: black;
+ font-weight: bold;
  font-size: 1.5em;
 }
 .article-body {

@@ -20,7 +20,6 @@ class ArticlesController < ApplicationController
     end
     
     def create 
-        #render plain: params[:article].inspect
         @article = Article.new(article_params)
         @article.user = User.first
         if @article.save
@@ -52,8 +51,8 @@ class ArticlesController < ApplicationController
     end
 
     private
-    def article_params
-        params.require(:article).permit(:title, :description)
-    end
+        def article_params
+            params.require(:article).permit(:title, :description)
+        end
 
 end
