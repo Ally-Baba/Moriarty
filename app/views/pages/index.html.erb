@@ -1,12 +1,57 @@
-<div class="container">
-<h1 align='center'>Moriarty Liquors</h1>
-<h4 align='center'>101 Middle Street, Fairhaven, MA 02719</h4>
+<%# <div class="container">
+
 
     <div class="jumbotron">
-    <%= image_tag("frontHouse1_cropped", :alt => "Moriarty's Front", :style => "width: 100%;") %>
+    <h1 align='right'>Moriarty's Liquors</h1>
+    <%= image_tag("frontHouse1_cropped", :alt => "Moriarty's Front", :style => "width: 50%; height: 50%;")%>
+
+    <%# </div>
+<h1 align='center'>Moriarty Liquors</h1>
+<h4 align='center'>101 Middle Street, Fairhaven, MA 02719</h4>
+</div> %> 
+
+<!-- News jumbotron -->
+
+<div class="jumbotron text-center hoverable p-4">
+
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-md-4 offset-md-1 mx-3 my-3">
+
+      <!-- Featured image -->
+      <div class="view overlay">
+        <%= image_tag("frontHouse1_cropped", :alt => "Moriarty's Front", :style => "width: 130%; height: 100%;")%>
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
     </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-7 text-md-left ml-3 mt-3">
+
+      <!-- Excerpt -->
+      
+
+      <h1 class="h4 mb-4">Moriarty Liquors</h1>
+
+      <p class="font-weight-normal">101 Middle Street, Fairhaven MA 02719</p>
+      <p class="font-weight-normal">Open Monday through Saturday 10:30am to 8:30pm</p>
+      <p class="font-weight-normal">(508) 984-0490</p>
+
+      <a class="btn btn-success", <%= link_to 'About', about_path %> </a>
+      <%= link_to "Sign Our Guest Book", new_article_path, class: "btn btn-xl btn-success" %>
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
 </div>
+<!-- News jumbotron -->
 
-
-
-<%= link_to 'About', about_path %>

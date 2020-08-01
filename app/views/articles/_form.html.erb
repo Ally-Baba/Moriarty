@@ -21,6 +21,8 @@
   <div class="form-group">
    <div class="col-sm-offset-2 col-sm-10">
     <%= f.submit class: 'btn btn-success btn-large', value: "Create Post" %>
+    <a class="btn btn-success",<%= link_to 'Back', articles_path %></a>
+    <a class="btn btn-success",<%= link_to 'Delete', article_path(@article), method: :delete, data: {confirm: "Are you sure?"} %></a>
    </div>
   </div>
 <% end %>

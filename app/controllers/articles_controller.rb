@@ -16,7 +16,12 @@ class ArticlesController < ApplicationController
     end
 
     def new
-        @article = Article.new
+        if logged_in?
+            @article = Article.new
+        else
+            flash[:success] = "Please sign up to create a Guest Book entry. Thank you!"
+            redirect_to signup_path
+        end
     end
     
     def create 
@@ -42,10 +47,10 @@ class ArticlesController < ApplicationController
 
     def update
         if @article.update(article_params)
-            flash[:success] = "Post was updated"
+            flash[:success] = "Thanks for signing the guestbook!"
             redirect_to article_path(@article)
         else
-            flash[:success] = "Post was not updated"
+            flash[:success] = "Guestbook was not updated."
             render 'edit'
         end
     end

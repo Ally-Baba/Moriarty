@@ -1,11 +1,15 @@
-<h1 align="center">Guest Book Posts</h1>
-
+<h1 align="center">Moriarty Liquor's Guest Book</h1>
+<br>
+<div align='center'>
+    <%= link_to "Sign Our Guest Book", new_article_path, class: "btn btn-xl btn-success" %>
+</div>
+<br>
 <% @articles.each do |article| %>
  <div class="row">
   <div class="col-xs-8 col-xs-offset-2">
    <div class="well well-lg">
     <div class="article-title">
-     <%= link_to article.title, article_path(article) %>
+        <h3> <%= article.title %> </h3>
     </div>
 
    <div class="article-body">
