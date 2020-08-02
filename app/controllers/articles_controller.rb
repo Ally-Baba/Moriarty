@@ -28,6 +28,7 @@ class ArticlesController < ApplicationController
     def create 
         @article = Article.new(article_params)
         @article.user = current_user
+        @article.ip = request.remote_ip
         if @article.save
             flash[:success] = "Thanks for signing our guest book!"
             redirect_to article_path(@article)
