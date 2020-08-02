@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
 
     before_action :set_article, only: [:edit, :update, :show, :destroy]
-    before_action :logged_in_user, only: [:edit, :update, :delete]
+    before_action :logged_in_user, only: [:edit, :update, :delete, :destroy]
     def set_article
         @article = Article.find(params[:id])
     end

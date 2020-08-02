@@ -17,9 +17,13 @@
         <h3> <%= article.title %> </h3>
     </div>
 
-   <div class="article-body", style="font-size: 18px">
-   <%= truncate(article.description, length: 100) %>
-   </div>
+    <div class="article-body", style="font-size: 18px">
+    <%= truncate(article.description, length: 350) %>
+    <% if article.description.length > 350 %>
+        <%= link_to "View More", article_path(article), class: "btn btn-xs btn-warning" %>
+    <% end %>
+    </div>
+    
 
    
 
