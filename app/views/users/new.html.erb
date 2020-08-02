@@ -33,6 +33,10 @@
       <%= f.submit(@user.new_record?  ? "Sign up" : "Update account", class: 'btn btn-success btn-large') %>
       <%= link_to 'Back', articles_path, class: "btn btn-success btn-large" %>
    </div>
+   
+  </div>
+  <div align="center">
+  <%= link_to 'Have an Account? Log In Here', login_path, class: "btn btn-success btn-large" %>
   </div>
 <% end %>
   
