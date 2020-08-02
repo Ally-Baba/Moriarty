@@ -1,41 +1,45 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body {background-color: white;}
-h1  {color: black;
-    font-family: Verdana;
-    font-size: 300%;
-    }
-p    {color: black;}
 
-</style>
-</head>
-<body>
 
-<div class="page-header">
+<div class="jumbotron">
     <h1 align='center'>The History of Moriarty Liquors</h1>
 </div>
 <div class="container">
     <div class="row">
         <div class="col-sm-5">
+        
             <%= image_tag("frontSign1", :alt => "Moriarty's Front", :class => "about") %>
         </div>
-        <div class="col-sm-7" style="display: table; height: 400px; overflow: hidden;">
-            <div class="aboutDescription" align='center'>
-                <p> In August of 1995, Chris and his parents, Bert and Pat, purchased Center Liquors in Fairhaven. They renamed the business F.J. Moriarty's after Pat's father, a kind man fond of the drink. From tourists, to locals, Moriarty's has been serving the town of Fairhaven for over 2 decades. Even after 25 years, you can still find Chris, Pat or Bert behind the counter providing the same family friendly service. Throughout the years the family has donated to local families in need, collected donations from their generous customers for charitable organizations, and even sponsored a softball team. Moriarty's has always found a way to give back to its community and value its loyal customers.  </p>
+        <div class="col-sm-7" style="display: table; height: 300px; overflow: hidden;">
+        <br>
+        <br>
+        <br>
+        <br>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="aboutDescription" align='center'>
+                    <p> In August of 1995, Chris and his parents, Bert and Pat, purchased Center Liquors in Fairhaven. They renamed the business F.J. Moriarty's after Pat's father, a kind man fond of the drink. From tourists, to locals, Moriarty's has been serving the town of Fairhaven for over 2 decades. Even after 25 years, you can still find Chris, Pat or Bert behind the counter providing the same family friendly service. Throughout the years the family has donated to local families in need, collected donations from their generous customers for charitable organizations, and even sponsored a softball team. Moriarty's has always found a way to give back to its community and value its loyal customers.  </p>
+                </div>
             </div>
         </div>
     </div>
     <br>
-    <br>
     <div class="row">
-        <div class="col-sm-5" style="display: table; height: 500px; overflow: hidden;">
-            <div class="aboutDescription" align='center'>
-                <p> When they are not at the store, all three enjoy spending time outdoors. Pat and Bert often spend time at their home in northern Maine. Pat loves spending time riding her tractor while Bert can be found hunting or tinkering in the garage. The couple have been working together opening the store each day for almost half of their marriage. That's right - Pat and Bert have been married for 63 years at the time of this post. The loving couple has truly dedicated their lives to each other, their family, and their business. </p>
+    
+        <div class="col-sm-7" style="display: table; height: 500px; overflow: hidden;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="aboutDescription" align='center'>
+                    <p> When they are not at the store, all three enjoy spending time outdoors. Pat and Bert often spend time at their home in northern Maine. Pat loves spending time riding her tractor while Bert can be found hunting or tinkering in the garage. The couple have been working together opening the store each day for almost half of their marriage. That's right - Pat and Bert have been married for 63 years at the time of this post. The loving couple has truly dedicated their lives to each other, their family, and their business. </p>
+                </div>
             </div>
         </div>
-        <div class="col-sm-7">
+        <div class="col-sm-5">
             <%= image_tag("Tractor", :alt => "Moriarty's Front", :class => "about") %>
         </div>
     </div>
@@ -45,15 +49,26 @@ p    {color: black;}
     <div class="row">
         <div class="col-sm-5">
             <%= image_tag("Chris1", :alt => "Moriarty's Front", :class => "about") %>
-        </div>        
-        <div align='center', class="col-sm-7">
-            <p> An avid fan of nature, Chris can be found hiking or camping when he isn't at the store. His life long dream is to hike the Appalachian Trail funded solely on spare change left behind by customers. Believe it or not, he is almost to his goal. Now, Chris just needs an opportunity to retire! He has spent 25 years making sure his customers recieve top notch service and makes a point to remember the faces and names of everyone who frequents his store. Chris is always appreciative of any donations to his hiking fund, even if it's just a penny! </p>
+        </div>  
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="col-sm-7" style="display: table; height: 300px; overflow: hidden;">  
+            <div class="jumbotron jumbotron-fluid">    
+              <div class="aboutDescription" align='center'>
+                 <p> An avid fan of nature, Chris can be found hiking or camping when he isn't at the store. His life long dream is to hike the Appalachian Trail funded solely on spare change left behind by customers. Believe it or not, he is almost to his goal. Now, Chris just needs an opportunity to retire! He has spent 25 years making sure his customers recieve top notch service and makes a point to remember the faces and names of everyone who frequents his store. Chris is always appreciative of any donations to his hiking fund, even if it's just a penny! </p>
+            </div>
         </div>
     </div>
+    </div>
 </div>
-
+<br>
+<br>
 <div align='center'>
-    <%= link_to 'Home', root_path, class: "btn btn-xs btn-success" %>
+    <%= link_to 'Home', root_path, class: "btn btn-xl btn-success" %>
+    <%= link_to 'Guest Book', articles_path, class: "btn btn-xl btn-success" %>
 </div>
 </body>
 </html>

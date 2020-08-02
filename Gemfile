@@ -57,3 +57,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bcrypt', '~> 3.1.7'
 gem 'font-awesome-rails'
+
+gem 'cancancan', '~> 1.9'
+gem 'rails_admin'
